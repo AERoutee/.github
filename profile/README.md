@@ -1,16 +1,18 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/AERoutee/AERoute-FE/main/src/assets/aeroute-logo.png" alt="AERoute" width="180" />
 
-  # AERoute
-  ### A clearer route for every breath.
+# AERoute
 
-  [![Frontend](https://img.shields.io/badge/GitHub-AERoute--FE-181717?style=for-the-badge&logo=github)](https://github.com/AERoutee/AERoute-FE)
-  [![Backend](https://img.shields.io/badge/GitHub-AERoute--BE-181717?style=for-the-badge&logo=github)](https://github.com/AERoutee/AERoute-BE)
-  [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://github.com/AERoutee/AERoute-FE/blob/main/LICENSE)
+### A clearer route for every breath.
 
-  **Submission for ITECHNO CUP 2026 - Web Development**
+[![Frontend](https://img.shields.io/badge/GitHub-AERoute--FE-181717?style=for-the-badge&logo=github)](https://github.com/AERoutee/AERoute-FE)
+[![Backend](https://img.shields.io/badge/GitHub-AERoute--BE-181717?style=for-the-badge&logo=github)](https://github.com/AERoutee/AERoute-BE)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://github.com/AERoutee/AERoute-FE/blob/main/LICENSE)
 
-  **By AERoute Team**
+**Submission for ITECHNO CUP 2026 - Web Development**
+
+**By AERoute Team**
+
 </div>
 
 ---
@@ -33,11 +35,11 @@
 
 ## 👥 Tim Developer
 
-| Nama | Peran | GitHub |
-| --- | --- | --- |
-| **Andrian Pratama** | Project Lead & Lead Full-Stack Developer | [@Yanzz231](https://github.com/Yanzz231) |
-| **Jeremy Auriel Zhang** | Full-Stack Developer | [@jeremzhg](https://github.com/jeremzhg) |
-| **Calvin Wu** | Product Manager | [@5calvinw](https://github.com/5calvinw) |
+| Nama                    | Peran                                    | GitHub                                   |
+| ----------------------- | ---------------------------------------- | ---------------------------------------- |
+| **Andrian Pratama**     | Project Lead & Lead Full-Stack Developer | [@Yanzz231](https://github.com/Yanzz231) |
+| **Jeremy Auriel Zhang** | Full-Stack Developer                     | [@jeremzhg](https://github.com/jeremzhg) |
+| **Calvin Wu**           | Product Manager                          | [@5calvinw](https://github.com/5calvinw) |
 
 ---
 
@@ -67,14 +69,14 @@ AERoute adalah produk informasional. Exposure index bukan personal dose, diagnos
 
 ### Kesesuaian Aspek Penilaian
 
-| Aspek Penyisihan | Bukti pada AERoute |
-| --- | --- |
-| **Kesesuaian Tema & Subtema — 20%** | Mendukung SDG 11 melalui route planning untuk mobilitas aktif, environmental context, dan community road reports |
-| **Inovasi & Orisinalitas Ide — 20%** | Menggabungkan route alternatives, PM2.5 per segmen, weather checkpoints, live location, dan laporan komunitas |
-| **Fungsionalitas Website — 20%** | Auth, OAuth, profile, recovery, route comparison, clickable polylines, reports, image upload, dan responsive panels terintegrasi end-to-end |
-| **UI/UX & Responsivitas — 15%** | Public pages responsif, mobile bottom navigation, draggable desktop panels, bottom sheets, keyboard controls, dan semantic forms |
-| **Implementasi Teknologi — 15%** | React/Vite SPA, Express modular API, Better Auth, Prisma/PostgreSQL, Google Maps Platform, private object storage, dan OpenAPI 3.1 |
-| **Dokumentasi & Repositori — 10%** | README kompetisi, environment contract, architecture, setup, Swagger UI, dan semantic commit history |
+| Aspek Penyisihan                     | Bukti pada AERoute                                                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Kesesuaian Tema & Subtema — 20%**  | Mendukung SDG 11 melalui route planning untuk mobilitas aktif, environmental context, dan community road reports                            |
+| **Inovasi & Orisinalitas Ide — 20%** | Menggabungkan route alternatives, PM2.5 per segmen, weather checkpoints, live location, dan laporan komunitas                               |
+| **Fungsionalitas Website — 20%**     | Auth, OAuth, profile, recovery, route comparison, clickable polylines, reports, image upload, dan responsive panels terintegrasi end-to-end |
+| **UI/UX & Responsivitas — 15%**      | Public pages responsif, mobile bottom navigation, draggable desktop panels, bottom sheets, keyboard controls, dan semantic forms            |
+| **Implementasi Teknologi — 15%**     | React/Vite SPA, Express modular API, Better Auth, Prisma/PostgreSQL, Google Maps Platform, private object storage, dan OpenAPI 3.1          |
+| **Dokumentasi & Repositori — 10%**   | README kompetisi, environment contract, architecture, setup, Swagger UI, dan semantic commit history                                        |
 
 ---
 
@@ -82,13 +84,13 @@ AERoute adalah produk informasional. Exposure index bukan personal dose, diagnos
 
 ### Fitur Utama
 
-| Fitur | Deskripsi | Keunggulan |
-| --- | --- | --- |
-| **PM2.5 Route Comparison** | Membandingkan alternatif rute berdasarkan waktu, jarak, dan exposure index | Trade-off lebih transparan daripada shortest-route only |
-| **Segment-Level Air Context** | Mewarnai bagian rute berdasarkan sample PM2.5 lokal | Menunjukkan bahwa kondisi tidak selalu sama sepanjang rute |
-| **Weather Along Route** | Menampilkan hourly forecast sesuai estimasi waktu pengguna mencapai titik rute | Prediksi cuaca terlihat langsung di map tanpa mencampur skor PM2.5 |
-| **Community Road Reports** | Pengguna dapat melaporkan hazard, blocked path, crash, construction, atau map issue | Informasi lapangan tampil sebagai marker komunitas selama 24 jam |
-| **Live Location** | Posisi dan heading diperbarui melalui browser geolocation | Mendukung pengalaman navigasi map-first |
+| Fitur                         | Deskripsi                                                                           | Keunggulan                                                         |
+| ----------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **PM2.5 Route Comparison**    | Membandingkan alternatif rute berdasarkan waktu, jarak, dan exposure index          | Trade-off lebih transparan daripada shortest-route only            |
+| **Segment-Level Air Context** | Mewarnai bagian rute berdasarkan sample PM2.5 lokal                                 | Menunjukkan bahwa kondisi tidak selalu sama sepanjang rute         |
+| **Weather Along Route**       | Menampilkan hourly forecast sesuai estimasi waktu pengguna mencapai titik rute      | Prediksi cuaca terlihat langsung di map tanpa mencampur skor PM2.5 |
+| **Community Road Reports**    | Pengguna dapat melaporkan hazard, blocked path, crash, construction, atau map issue | Informasi lapangan tampil sebagai marker komunitas selama 24 jam   |
+| **Live Location**             | Posisi dan heading diperbarui melalui browser geolocation                           | Mendukung pengalaman navigasi map-first                            |
 
 ### Fitur Tambahan
 
@@ -170,14 +172,14 @@ Monitoring   : LogRocket untuk frontend; Railway logs dan redacting request logg
 
 ### Alasan Pemilihan Teknologi
 
-| Teknologi | Alasan Pemilihan |
-| --- | --- |
-| **React + Vite** | Cocok untuk map overlays, responsive panels, route-level code splitting, dan development cepat |
-| **Google Maps Platform** | Menyediakan map, place search, route geometry, air-quality, dan weather provider |
-| **Express + Better Auth** | API modular dengan database session, OAuth, credential accounts, dan password management |
-| **PostgreSQL + Prisma** | Data relasional, migration eksplisit, generated client, dan repository contract typed |
-| **Sharp + S3 Storage** | Memproses avatar/report images tanpa membuat object storage publik |
-| **Swagger UI** | Kontrak API dapat dibaca dan diuji secara interaktif oleh juri maupun frontend developer |
+| Teknologi                 | Alasan Pemilihan                                                                               |
+| ------------------------- | ---------------------------------------------------------------------------------------------- |
+| **React + Vite**          | Cocok untuk map overlays, responsive panels, route-level code splitting, dan development cepat |
+| **Google Maps Platform**  | Menyediakan map, place search, route geometry, air-quality, dan weather provider               |
+| **Express + Better Auth** | API modular dengan database session, OAuth, credential accounts, dan password management       |
+| **PostgreSQL + Prisma**   | Data relasional, migration eksplisit, generated client, dan repository contract typed          |
+| **Sharp + S3 Storage**    | Memproses avatar/report images tanpa membuat object storage publik                             |
+| **Swagger UI**            | Kontrak API dapat dibaca dan diuji secara interaktif oleh juri maupun frontend developer       |
 
 ### Dependencies Utama
 
@@ -373,6 +375,8 @@ npm run db:studio
 9. Klik route card atau langsung klik garis route pada map.
 10. Aktifkan Weather/Community Reports melalui Layers bila diperlukan.
 
+![AERoute Route Tutorial](assets/Guide1.png)
+
 #### Mengirim Community Report
 
 1. Tekan **Report** pada dashboard.
@@ -533,6 +537,6 @@ Proyek ini dilisensikan di bawah [MIT License](https://github.com/AERoutee/AERou
 
 <div align="center">
 
-  **Made with ❤️ by AERoute Team for ITECHNO CUP 2026**
+**Made with ❤️ by AERoute Team for ITECHNO CUP 2026**
 
 </div>
