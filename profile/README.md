@@ -364,36 +364,15 @@ npm run db:studio
 
 #### Untuk Pengguna Umum
 
-1. Buka landing page AERoute.
-2. Pilih **Sign in** atau **Create account**.
-3. Buka dashboard map.
-4. Izinkan browser location jika ingin live marker dan road report.
-5. Pilih origin dan destination.
-6. Pilih Walk/Cycle serta Balanced/Lower exposure.
-7. Aktifkan Sensitive-user mode bila ingin toleransi waktu Balanced lebih konservatif.
-8. Tekan **Compare routes**.
-9. Klik route card atau langsung klik garis route pada map.
-10. Aktifkan Weather/Community Reports melalui Layers bila diperlukan.
-
 ![AERoute Route Tutorial](assets/Guide1.png)
 
 #### Mengirim Community Report
 
-1. Tekan **Report** pada dashboard.
-2. Pilih kategori masalah.
-3. Lokasi report diambil ketika report flow dimulai.
-4. Isi deskripsi 10–500 karakter.
-5. Tambahkan maksimal tiga foto JPG/PNG/WebP, maksimal 3 MB per gambar.
-6. Klik thumbnail untuk full-screen preview sebelum submit.
-7. Submit report. Report aktif selama 24 jam dan dapat dilihat pengguna lain pada viewport terkait.
+![AERoute Report Tutorial](assets/Guide2.png)
 
 #### Mengelola Akun
 
-1. Buka menu profile.
-2. Ubah nama atau profile photo.
-3. Akun Google dapat menambahkan password setelah verifikasi OTP.
-4. Forgot-password membuat opaque challenge ID dan mengirim OTP enam digit.
-5. Password reset mencabut session lama.
+![AERoute Account Tutorial](assets/Guide3.png)
 
 #### Admin
 
