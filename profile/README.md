@@ -1,17 +1,19 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/AERoutee/AERoute-FE/main/src/assets/aeroute-logo.png" alt="AERoute" width="180" />
 
-  # AERoute
-  ### A clearer route for every breath.
+# AERoute
 
-  [![Live Demo](https://img.shields.io/badge/Live_Demo-aeroute.my.id-0B7A53?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aeroute.my.id)
-  [![Frontend](https://img.shields.io/badge/GitHub-AERoute--FE-181717?style=for-the-badge&logo=github)](https://github.com/AERoutee/AERoute-FE)
-  [![Backend](https://img.shields.io/badge/GitHub-AERoute--BE-181717?style=for-the-badge&logo=github)](https://github.com/AERoutee/AERoute-BE)
-  [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://github.com/AERoutee/AERoute-FE/blob/main/LICENSE)
+### A clearer route for every breath.
 
-  **Submission for ITECHNO CUP 2026 - Web Development**
+[![Live Demo](https://img.shields.io/badge/Live_Demo-aeroute.my.id-0B7A53?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aeroute.my.id)
+[![Frontend](https://img.shields.io/badge/GitHub-AERoute--FE-181717?style=for-the-badge&logo=github)](https://github.com/AERoutee/AERoute-FE)
+[![Backend](https://img.shields.io/badge/GitHub-AERoute--BE-181717?style=for-the-badge&logo=github)](https://github.com/AERoutee/AERoute-BE)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://github.com/AERoutee/AERoute-FE/blob/main/LICENSE)
 
-  **By AERoute Team**
+**Submission for ITECHNO CUP 2026 - Web Development**
+
+**By AERoute Team**
+
 </div>
 
 ---
@@ -34,11 +36,11 @@
 
 ## 👥 Tim Developer
 
-| Nama | Peran | GitHub |
-| --- | --- | --- |
-| **Andrian Pratama** | Project Lead & Lead Full-Stack Developer | [@Yanzz231](https://github.com/Yanzz231) |
-| **Jeremy Auriel Zhang** | Full-Stack Developer | [@jeremzhg](https://github.com/jeremzhg) |
-| **Calvin Wu** | Product Manager | [@5calvinw](https://github.com/5calvinw) |
+| Nama                    | Peran                                    | GitHub                                   |
+| ----------------------- | ---------------------------------------- | ---------------------------------------- |
+| **Andrian Pratama**     | Project Lead & Lead Full-Stack Developer | [@Yanzz231](https://github.com/Yanzz231) |
+| **Jeremy Auriel Zhang** | Full-Stack Developer                     | [@jeremzhg](https://github.com/jeremzhg) |
+| **Calvin Wu**           | Product Manager                          | [@5calvinw](https://github.com/5calvinw) |
 
 ---
 
@@ -46,9 +48,7 @@
 
 ### Latar Belakang
 
-Aplikasi navigasi umumnya mengoptimalkan waktu dan jarak, sementara keputusan perjalanan juga dipengaruhi kualitas udara, cuaca, usaha berjalan, aksesibilitas yang diketahui, dan gangguan yang dilaporkan komunitas. Informasi tersebut sering tersebar dan sulit dibandingkan dalam satu alur.
-
-AERoute mendukung **SDG 11 — Kota dan Komunitas Berkelanjutan** melalui perencanaan perjalanan aktif dan transit yang menjelaskan trade-off rute tanpa menjanjikan keselamatan.
+![Tutorial melihat dan memilih rute AERoute](assets/LatarBelakang.png)
 
 ### Solusi yang Ditawarkan
 
@@ -72,14 +72,14 @@ PM2.5 ditampilkan untuk kondisi saat ini serta bucket prakiraan per jam pada keb
 
 ### Kesesuaian Aspek Penilaian
 
-| Aspek Penyisihan | Bukti pada AERoute |
-| --- | --- |
-| **Kesesuaian Tema & Subtema — 20%** | Mendukung SDG 11 melalui perencanaan Walk, Cycle, dan transit dengan konteks lingkungan serta komunitas |
+| Aspek Penyisihan                     | Bukti pada AERoute                                                                                                                               |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Kesesuaian Tema & Subtema — 20%**  | Mendukung SDG 11 melalui perencanaan Walk, Cycle, dan transit dengan konteks lingkungan serta komunitas                                          |
 | **Inovasi & Orisinalitas Ide — 20%** | PM2.5 current/+30/+60, hazard-aware ranking, evidence completeness, heat/UV, galeri/Street View rest-transit, dan modeled impact dalam satu alur |
-| **Fungsionalitas Website — 20%** | Auth/recovery/profile, lima pilihan mode, route comparison, report verification/resolution, Insights, PWA summary, dan API terintegrasi |
-| **UI/UX & Responsivitas — 15%** | Map-first responsive panels, pilihan mode langsung, clickable polylines, layers, keyboard controls, semantic forms, dan mobile navigation |
-| **Implementasi Teknologi — 15%** | React/Vite PWA, Express, Better Auth, Prisma/PostgreSQL, Google Maps Platform, private object storage, dan OpenAPI 3.1 |
-| **Dokumentasi & Repositori — 10%** | README kompetisi, architecture/schema, setup dan migration, Swagger UI, testing, serta environment contract |
+| **Fungsionalitas Website — 20%**     | Auth/recovery/profile, lima pilihan mode, route comparison, report verification/resolution, Insights, PWA summary, dan API terintegrasi          |
+| **UI/UX & Responsivitas — 15%**      | Map-first responsive panels, pilihan mode langsung, clickable polylines, layers, keyboard controls, semantic forms, dan mobile navigation        |
+| **Implementasi Teknologi — 15%**     | React/Vite PWA, Express, Better Auth, Prisma/PostgreSQL, Google Maps Platform, private object storage, dan OpenAPI 3.1                           |
+| **Dokumentasi & Repositori — 10%**   | README kompetisi, architecture/schema, setup dan migration, Swagger UI, testing, serta environment contract                                      |
 
 ---
 
@@ -87,16 +87,16 @@ PM2.5 ditampilkan untuk kondisi saat ini serta bucket prakiraan per jam pada keb
 
 ### Fitur Utama
 
-| Fitur | Implementasi | Batasan jujur |
-| --- | --- | --- |
-| **Active Comparison & Integrated Transit** | Maksimal tiga mode menjadi kandidat; Walk + Cycle tanpa transit tetap dua alternatif, sedangkan Cycle + transit menghasilkan itinerary komposit Cycle → transit → Walk dan fallback transit native | Kombinasi bergantung pada cakupan provider; parkir sepeda pada transit pertama tidak diverifikasi |
-| **PM2.5 Departure Windows** | Current, +30, dan +60 menit dengan segment samples, exposure index, progress-based colored segments, dan legenda hijau/kuning/merah/abu-abu | Future windows memakai hourly forecast bucket; partial/unavailable coverage tidak diekstrapolasi ke seluruh rute |
-| **Explainable Ranking** | Alasan, trade-off, limitations, rule version, serta evidence-completeness score dan factors | Bukan klaim keselamatan atau probabilitas |
-| **Hazard-aware Signals** | Ranking dapat mempertimbangkan laporan aktif, confirmation/dispute, evidence score, dan jarak ke polyline | Laporan dapat tidak lengkap; tidak adanya laporan bukan bukti bebas hazard |
-| **Break, Heat & UV** | Nilai Break ringkas untuk setiap rute terpilih, satu alasan saat perlu, serta temperature/UV; kandidat dapat dibuka langsung pada map | Weather unavailable ditampilkan netral; rekomendasi bukan advis medis |
-| **Rest Stops, Transit Stops & Accessibility Facts** | Semua map layer aktif secara default; shared popup menampilkan maksimal tiga foto, lightbox beratribusi, facility facts, dan Street View on-demand bila tersedia | Rest marker memakai pin rest-stop tanpa nomor; informasi aksesibilitas bukan jaminan step-free; panorama hanya dimuat setelah diminta pengguna |
-| **Community Verification** | Nearby/create/mine, foto, confirm/dispute, retract verification, owner resolution, dan evidence score | Report aktif terbatas waktu dan merupakan bukti komunitas |
-| **Insights** | Saat ini hanya **Recorded trips** yang merangkum modeled impact dari persisted route result | Hanya modeled impact; bukan GPS trace atau actual exposure measurement |
+| Fitur                                               | Implementasi                                                                                                                                                                                       | Batasan jujur                                                                                                                                  |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Active Comparison & Integrated Transit**          | Maksimal tiga mode menjadi kandidat; Walk + Cycle tanpa transit tetap dua alternatif, sedangkan Cycle + transit menghasilkan itinerary komposit Cycle → transit → Walk dan fallback transit native | Kombinasi bergantung pada cakupan provider; parkir sepeda pada transit pertama tidak diverifikasi                                              |
+| **PM2.5 Departure Windows**                         | Current, +30, dan +60 menit dengan segment samples, exposure index, progress-based colored segments, dan legenda hijau/kuning/merah/abu-abu                                                        | Future windows memakai hourly forecast bucket; partial/unavailable coverage tidak diekstrapolasi ke seluruh rute                               |
+| **Explainable Ranking**                             | Alasan, trade-off, limitations, rule version, serta evidence-completeness score dan factors                                                                                                        | Bukan klaim keselamatan atau probabilitas                                                                                                      |
+| **Hazard-aware Signals**                            | Ranking dapat mempertimbangkan laporan aktif, confirmation/dispute, evidence score, dan jarak ke polyline                                                                                          | Laporan dapat tidak lengkap; tidak adanya laporan bukan bukti bebas hazard                                                                     |
+| **Break, Heat & UV**                                | Nilai Break ringkas untuk setiap rute terpilih, satu alasan saat perlu, serta temperature/UV; kandidat dapat dibuka langsung pada map                                                              | Weather unavailable ditampilkan netral; rekomendasi bukan advis medis                                                                          |
+| **Rest Stops, Transit Stops & Accessibility Facts** | Semua map layer aktif secara default; shared popup menampilkan maksimal tiga foto, lightbox beratribusi, facility facts, dan Street View on-demand bila tersedia                                   | Rest marker memakai pin rest-stop tanpa nomor; informasi aksesibilitas bukan jaminan step-free; panorama hanya dimuat setelah diminta pengguna |
+| **Community Verification**                          | Nearby/create/mine, foto, confirm/dispute, retract verification, owner resolution, dan evidence score                                                                                              | Report aktif terbatas waktu dan merupakan bukti komunitas                                                                                      |
+| **Insights**                                        | Saat ini hanya **Recorded trips** yang merangkum modeled impact dari persisted route result                                                                                                        | Hanya modeled impact; bukan GPS trace atau actual exposure measurement                                                                         |
 
 ### Fitur Tambahan
 
@@ -115,11 +115,11 @@ PM2.5 ditampilkan untuk kondisi saat ini serta bucket prakiraan per jam pada keb
 
 ### Live Demo
 
-| Layanan | URL |
-| --- | --- |
-| Live Website | [https://aeroute.my.id](https://aeroute.my.id) |
-| API | [https://api.aeroute.my.id](https://api.aeroute.my.id) |
-| Swagger UI | [https://api.aeroute.my.id/api/docs](https://api.aeroute.my.id/api/docs) |
+| Layanan      | URL                                                                      |
+| ------------ | ------------------------------------------------------------------------ |
+| Live Website | [https://aeroute.my.id](https://aeroute.my.id)                           |
+| API          | [https://api.aeroute.my.id](https://api.aeroute.my.id)                   |
+| Swagger UI   | [https://api.aeroute.my.id/api/docs](https://api.aeroute.my.id/api/docs) |
 
 ### Screenshot Aplikasi
 
@@ -174,15 +174,15 @@ Monitoring     : LogRocket frontend; redacted Railway/backend logs
 
 ### Provider & Asset Attribution
 
-| Sumber | Penggunaan |
-| --- | --- |
-| **Google Maps JavaScript API** | Map rendering dan interaksi browser |
-| **Google Places API** | Place search/autocomplete dan rest-stop candidates sepanjang rute |
-| **Google Routes API** | Geometry, alternatif, durasi, jarak, transit legs, serta provider labels |
-| **Google Air Quality API** | Current conditions untuk offset 0 dan hourly forecast buckets untuk +30/+60 |
-| **Google Weather API** | Hourly forecast terdekat dengan target waktu tiap checkpoint |
-| **AERoute Community Reports** | Sinyal laporan aktif dalam 100 meter dari geometry; bukan verifikasi keselamatan |
-| **Icons8 Color Icons** | Ikon warna antarmuka; attribution: [Icons8](https://icons8.com/icons/color) |
+| Sumber                         | Penggunaan                                                                       |
+| ------------------------------ | -------------------------------------------------------------------------------- |
+| **Google Maps JavaScript API** | Map rendering dan interaksi browser                                              |
+| **Google Places API**          | Place search/autocomplete dan rest-stop candidates sepanjang rute                |
+| **Google Routes API**          | Geometry, alternatif, durasi, jarak, transit legs, serta provider labels         |
+| **Google Air Quality API**     | Current conditions untuk offset 0 dan hourly forecast buckets untuk +30/+60      |
+| **Google Weather API**         | Hourly forecast terdekat dengan target waktu tiap checkpoint                     |
+| **AERoute Community Reports**  | Sinyal laporan aktif dalam 100 meter dari geometry; bukan verifikasi keselamatan |
+| **Icons8 Color Icons**         | Ikon warna antarmuka; attribution: [Icons8](https://icons8.com/icons/color)      |
 
 Google provider data dapat tidak lengkap atau tidak tersedia menurut wilayah, waktu, konfigurasi API, dan cakupan layanan. Custom ranking dan modeled metrics dihitung AERoute, bukan skor keselamatan dari Google.
 
@@ -499,17 +499,17 @@ Tidak ada klaim perintah E2E karena package frontend maupun backend tidak menyed
 
 ### Hasil Terverifikasi
 
-| Repository | Suites | Tests | Statements | Branches | Functions | Lines | Status |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| **Frontend** | 33 | 210 | 93.75% | 83.36% | 91.42% | 97.74% | tests, coverage, lint, typecheck, build pass |
-| **Backend** | 20 | 344 | 95.47% | 87.27% | 95.48% | 98.17% | tests, coverage, lint, typecheck, build pass |
+| Repository   | Suites | Tests | Statements | Branches | Functions |  Lines | Status                                       |
+| ------------ | -----: | ----: | ---------: | -------: | --------: | -----: | -------------------------------------------- |
+| **Frontend** |     33 |   210 |     93.75% |   83.36% |    91.42% | 97.74% | tests, coverage, lint, typecheck, build pass |
+| **Backend**  |     20 |   344 |     95.47% |   87.27% |    95.48% | 98.17% | tests, coverage, lint, typecheck, build pass |
 
 `prisma validate` dan migration deploy pass. Coverage thresholds:
 
-| Repository | Statements | Branches | Functions | Lines |
-| --- | ---: | ---: | ---: | ---: |
-| **Frontend minimum** | 80% | 70% | 80% | 80% |
-| **Backend minimum** | 95% | 85% | 95% | 95% |
+| Repository           | Statements | Branches | Functions | Lines |
+| -------------------- | ---------: | -------: | --------: | ----: |
+| **Frontend minimum** |        80% |      70% |       80% |   80% |
+| **Backend minimum**  |        95% |      85% |       95% |   95% |
 
 Provider behavior yang bergantung pada Google coverage, browser geolocation, SMTP, dan object storage tetap memerlukan integration/manual QA dengan credentials dan environment yang sesuai; angka coverage tidak diklaim sebagai cakupan provider eksternal end-to-end.
 
@@ -523,6 +523,6 @@ Proyek ini dilisensikan di bawah [MIT License](https://github.com/AERoutee/AERou
 
 <div align="center">
 
-  **Made with ❤️ by AERoute Team for ITECHNO CUP 2026**
+**Made with ❤️ by AERoute Team for ITECHNO CUP 2026**
 
 </div>
