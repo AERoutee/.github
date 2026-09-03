@@ -48,19 +48,16 @@
 
 ### Latar Belakang
 
-![Tutorial melihat dan memilih rute AERoute](assets/LatarBelakang.png)
+![Latar Belakang AERoute](assets/LatarBelakang.png)
 
 ### Solusi yang Ditawarkan
 
-AERoute menyediakan lima pilihan langsung: **Walk, Cycle, Bus, Train, dan Subway**. Satu sampai maksimal tiga mode dapat dipilih sebagai preferensi atau kandidat yang diizinkan; hanya kombinasi yang tersedia yang ditampilkan. **Walk + Cycle** tanpa transit membandingkan dua alternatif aktif terpisah melalui request atomik Walk dan Cycle. Pilihan yang memuat **Cycle + transit** menjalankan dua kandidat berurutan secara bersamaan: itinerary komposit Cycle → transit → Walk dan fallback transit native dengan walking access, egress, serta transfers. Parkir sepeda pada titik transit pertama tidak diverifikasi. Alternatif aktif memakai prioritas **Balanced** atau **Lower exposure**; itinerary transit memakai **Less walking** atau **Fewer transfers**.
+![Mockup AERoute](assets/mockups.png)
+![Solusi yang Ditawarkan](assets/Solusi.png)
 
-Perbandingan menggunakan durasi, jarak, modeled PM2.5 exposure index, evidence completeness, cuaca, dan sinyal laporan komunitas:
+### Tujuan Projek
 
-```text
-estimated exposure index = average route PM2.5 × travel time in minutes
-```
-
-PM2.5 ditampilkan untuk kondisi saat ini serta bucket prakiraan per jam pada keberangkatan **+30** dan **+60 menit**. Segmen rute mengikuti progress sepanjang polyline dengan legenda hijau ≤15, kuning 15–35, merah >35, dan abu-abu untuk data tidak tersedia; cakupan parsial ditandai tanpa mengekstrapolasi seluruh rute. Jendela mendatang adalah perkiraan karena menggunakan resolusi hourly bucket. Exposure index dan modeled trip impact bukan personal dose, diagnosis, pengukuran inhalasi aktual, atau pengganti advis medis.
+![Solusi yang Ditawarkan](assets/tujuan.png)
 
 ### Batasan Penting
 
