@@ -379,12 +379,25 @@ npx prisma validate
 6. Tekan **Compare routes** untuk melihat current, +30, dan +60, lalu periksa explanation, trade-offs, evidence completeness, hazard signals, Break/heat/UV, PM2.5 segment legend, dan limitations.
 7. Pilih route card/polyline. **Start route guidance** aktif hanya dengan live fix yang fresh, akurat, dan dekat origin; transit/composite tidak melakukan auto reroute dan fitur ini bukan turn-by-turn guidance.
 
+![Tutorial melihat dan memilih rute AERoute](assets/Guide1.png)
+
 #### Community Report
 
 1. Tekan **Report**, pilih kategori, isi deskripsi, dan tambahkan maksimal tiga JPG/PNG/WebP berukuran maksimal 3 MB per file.
 2. Report aktif hingga 24 jam kecuali diselesaikan lebih awal oleh pemilik.
 3. Pengguna lain dapat **Confirm**, **Dispute**, atau menarik verification; pemilik dapat resolve report miliknya.
 4. Evidence score menggabungkan recency, foto, dan confirmation balance; skor bukan bukti kebenaran atau keselamatan.
+
+![Tutorial membuat Community Report AERoute](assets/Guide2.png)
+
+#### Mengelola Akun
+
+1. Buka menu akun pada dashboard, lalu pilih **Profile**.
+2. Ubah foto profil melalui tombol edit pada avatar.
+3. Ubah nama melalui **Edit name**, lalu simpan perubahan.
+4. Akun Google dapat menambahkan password setelah verifikasi email.
+
+![Tutorial mengelola akun AERoute](assets/Guide3.png)
 
 #### Insights dan Offline
 
