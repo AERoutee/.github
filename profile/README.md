@@ -179,20 +179,6 @@
 }
 ```
 
-### Provider & Asset Attribution
-
-| Sumber                         | Penggunaan                                                                       |
-| ------------------------------ | -------------------------------------------------------------------------------- |
-| **Google Maps JavaScript API** | Map rendering dan interaksi browser                                              |
-| **Google Places API**          | Place search/autocomplete dan rest-stop candidates sepanjang rute                |
-| **Google Routes API**          | Geometry, alternatif, durasi, jarak, transit legs, serta provider labels         |
-| **Google Air Quality API**     | Current conditions untuk offset 0 dan hourly forecast buckets untuk +30/+60      |
-| **Google Weather API**         | Hourly forecast terdekat dengan target waktu tiap checkpoint                     |
-| **AERoute Community Reports**  | Sinyal laporan aktif dalam 100 meter dari geometry; bukan verifikasi keselamatan |
-| **Icons8 Color Icons**         | Ikon warna antarmuka; attribution: [Icons8](https://icons8.com/icons/color)      |
-
-Google provider data dapat tidak lengkap atau tidak tersedia menurut wilayah, waktu, konfigurasi API, dan cakupan layanan. Custom ranking dan modeled metrics dihitung AERoute, bukan skor keselamatan dari Google.
-
 ---
 
 ## 🏗️ Arsitektur Sistem
