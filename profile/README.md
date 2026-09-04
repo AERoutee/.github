@@ -12,7 +12,7 @@
 
 **Submission for ITECHNO CUP 2026 - Web Development**
 
-**By AERoute Team**
+**By Team singular you**
 
 </div>
 
@@ -71,12 +71,12 @@
 
 | Aspek Penyisihan                     | Bukti pada AERoute                                                                                                                               |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Kesesuaian Tema & Subtema — 20%**  | Mendukung SDG 11 melalui perencanaan Walk, Cycle, dan transit dengan konteks lingkungan serta komunitas                                          |
-| **Inovasi & Orisinalitas Ide — 20%** | PM2.5 current/+30/+60, hazard-aware ranking, evidence completeness, heat/UV, galeri/Street View rest-transit, dan modeled impact dalam satu alur |
-| **Fungsionalitas Website — 20%**     | Auth/recovery/profile, lima pilihan mode, route comparison, report verification/resolution, Insights, PWA summary, dan API terintegrasi          |
-| **UI/UX & Responsivitas — 15%**      | Map-first responsive panels, pilihan mode langsung, clickable polylines, layers, keyboard controls, semantic forms, dan mobile navigation        |
-| **Implementasi Teknologi — 15%**     | React/Vite PWA, Express, Better Auth, Prisma/PostgreSQL, Google Maps Platform, private object storage, dan OpenAPI 3.1                           |
-| **Dokumentasi & Repositori — 10%**   | README kompetisi, architecture/schema, setup dan migration, Swagger UI, testing, serta environment contract                                      |
+| **Kesesuaian Tema & Subtema - 20%**  | Mendukung SDG 11 melalui perencanaan Walk, Cycle, dan transit dengan konteks lingkungan serta komunitas                                          |
+| **Inovasi & Orisinalitas Ide - 20%** | PM2.5 current/+30/+60, hazard-aware ranking, evidence completeness, heat/UV, galeri/Street View rest-transit, dan modeled impact dalam satu alur |
+| **Fungsionalitas Website - 20%**     | Auth/recovery/profile, lima pilihan mode, route comparison, report verification/resolution, Insights, PWA summary, dan API terintegrasi          |
+| **UI/UX & Responsivitas - 15%**      | Map-first responsive panels, pilihan mode langsung, clickable polylines, layers, keyboard controls, semantic forms, dan mobile navigation        |
+| **Implementasi Teknologi - 15%**     | React/Vite PWA, Express, Better Auth, Prisma/PostgreSQL, Google Maps Platform, private object storage, dan OpenAPI 3.1                           |
+| **Dokumentasi & Repositori - 10%**   | README kompetisi, architecture/schema, setup dan migration, Swagger UI, testing, serta environment contract                                      |
 
 ---
 
@@ -97,12 +97,12 @@
 
 ### Fitur Tambahan
 
-- **Peta Interaktif** — alternatif dapat dipilih melalui kartu hasil maupun garis rute; layer cuaca, aksesibilitas, rest stop, dan laporan komunitas dapat dikontrol dari dashboard.
-- **Reduced-exertion Approximation** — menyediakan alternatif berdasarkan data usaha perjalanan yang tersedia tanpa mengklaim rute wheelchair-safe atau sepenuhnya step-free.
-- **PWA Offline Summary** — menyimpan ringkasan terbatas dari rute terakhir selama maksimal 24 jam tanpa koordinat dan identitas pengguna.
-- **Autentikasi dan Pemulihan Akun** — mendukung email/password, Google OAuth, OTP enam digit, reset password, dan pencabutan sesi lama.
-- **Pengelolaan Profil** — pengguna dapat memperbarui nama dan foto profil; gambar diproses sebelum disimpan pada object storage privat.
-- **Dashboard Responsif** — planner, hasil rute, report flow, popup peta, dan navigasi disesuaikan untuk desktop maupun perangkat mobile.
+- **Peta Interaktif** - alternatif dapat dipilih melalui kartu hasil maupun garis rute; layer cuaca, aksesibilitas, rest stop, dan laporan komunitas dapat dikontrol dari dashboard.
+- **Reduced-exertion Approximation** - menyediakan alternatif berdasarkan data usaha perjalanan yang tersedia tanpa mengklaim rute wheelchair-safe atau sepenuhnya step-free.
+- **PWA Offline Summary** - menyimpan ringkasan terbatas dari rute terakhir selama maksimal 24 jam tanpa koordinat dan identitas pengguna.
+- **Autentikasi dan Pemulihan Akun** - mendukung email/password, Google OAuth, OTP enam digit, reset password, dan pencabutan sesi lama.
+- **Pengelolaan Profil** - pengguna dapat memperbarui nama dan foto profil; gambar diproses sebelum disimpan pada object storage privat.
+- **Dashboard Responsif** - planner, hasil rute, report flow, popup peta, dan navigasi disesuaikan untuk desktop maupun perangkat mobile.
 
 ---
 
@@ -118,7 +118,7 @@
 
 ### Screenshot Aplikasi
 
-Screenshot kompetisi belum tersedia. Placeholder ini akan diganti ketika aset screenshot final tersedia; tidak ada URL gambar sementara atau palsu.
+![Screenshot AERoute](assets/screenshots.png)
 
 ### Video Demo
 
@@ -520,6 +520,6 @@ Proyek ini dilisensikan di bawah [MIT License](https://github.com/AERoutee/AERou
 
 <div align="center">
 
-**Made with ❤️ by AERoute Team for ITECHNO CUP 2026**
+**Made with ❤️ by Team singular you for ITECHNO CUP 2026**
 
 </div>
