@@ -445,11 +445,11 @@ Tidak ada klaim perintah E2E karena package frontend maupun backend tidak menyed
 
 ## Unit Testing Frontend
 
-![Unit Test FE](assets/unittest1.png)
+![Unit Test FE](assets/unittest1.jpg)
 
 ## Unit Testing backend
 
-![Unit Test BE](assets/unittest2.png)
+![Unit Test BE](assets/unittest2.jpg)
 
 | Repository   | Suites | Tests | Statements | Branches | Functions |  Lines | Status                                       |
 | ------------ | -----: | ----: | ---------: | -------: | --------: | -----: | -------------------------------------------- |
