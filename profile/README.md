@@ -59,25 +59,6 @@
 
 ![Solusi yang Ditawarkan](assets/tujuan.png)
 
-### Batasan Penting
-
-- Hazard-aware ranking memakai sinyal community report, konfirmasi, dispute, kedekatan, dan kelengkapan bukti; hasil tidak berarti aman atau bebas hazard.
-- Confidence yang ditampilkan adalah **evidence completeness**, bukan probabilitas keselamatan atau akurasi.
-- Reduced-exertion adalah pendekatan berbasis data rute yang tersedia, bukan jaminan wheelchair-safe atau step-free; barrier, kemiringan, lift, dan akses penuh tidak diverifikasi.
-- Break recommendation selalu ditampilkan untuk rute terpilih; kandidat Walk normal muncul otomatis karena semua layer default aktif. Popup rest/transit memakai galeri maksimal tiga foto, lightbox beratribusi, facility facts, serta tombol **View 360°** hanya setelah Street View tersedia dalam radius 50 m; data yang hilang tetap unknown dan tidak memverifikasi aksesibilitas penuh atau keselamatan.
-- Route guidance memerlukan fix browser geolocation berakurasi 0–100 m, berumur maksimal 15 detik, dan berjarak maksimal 150 m dari origin. Rerouting aktif hanya untuk rute non-transit; transit/composite tetap bukan Google Navigation SDK atau turn-by-turn guidance.
-
-### Kesesuaian Aspek Penilaian
-
-| Aspek Penyisihan                     | Bukti pada AERoute                                                                                                                               |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Kesesuaian Tema & Subtema - 20%**  | Mendukung SDG 11 melalui perencanaan Walk, Cycle, dan transit dengan konteks lingkungan serta komunitas                                          |
-| **Inovasi & Orisinalitas Ide - 20%** | PM2.5 current/+30/+60, hazard-aware ranking, evidence completeness, heat/UV, galeri/Street View rest-transit, dan modeled impact dalam satu alur |
-| **Fungsionalitas Website - 20%**     | Auth/recovery/profile, lima pilihan mode, route comparison, report verification/resolution, Insights, PWA summary, dan API terintegrasi          |
-| **UI/UX & Responsivitas - 15%**      | Map-first responsive panels, pilihan mode langsung, clickable polylines, layers, keyboard controls, semantic forms, dan mobile navigation        |
-| **Implementasi Teknologi - 15%**     | React/Vite PWA, Express, Better Auth, Prisma/PostgreSQL, Google Maps Platform, private object storage, dan OpenAPI 3.1                           |
-| **Dokumentasi & Repositori - 10%**   | README kompetisi, architecture/schema, setup dan migration, Swagger UI, testing, serta environment contract                                      |
-
 ---
 
 ## ✨ Fitur Unggulan
@@ -191,58 +172,9 @@ Google provider data dapat tidak lengkap atau tidak tersedia menurut wilayah, wa
 
 ![AERoute System Architecture](https://raw.githubusercontent.com/AERoutee/AERoute-FE/main/assets/Architecture.png)
 
-```mermaid
-flowchart TD
-    U[Browser User] --> FE[React/Vite Frontend]
-    FE --> PWA[Service Worker + 24-hour reduced offline summary]
-    FE --> MAPS[Google Maps JavaScript API]
-    FE --> BPLACES[Google Places browser search]
-    FE -->|HTTPS + session cookie| BE[Express API]
-    BE --> AUTH[Better Auth]
-    BE --> ROUTES[Google Routes API]
-    BE --> AQ[Google Air Quality API]
-    BE --> WEATHER[Google Weather API]
-    BE --> PLACES[Google Places API]
-    BE --> REPORTS[Report verification + evidence scoring]
-    BE --> INSIGHTS[Saved commutes + modeled trip impact]
-    BE --> SMTP[SMTP Provider]
-    BE --> S3[Private S3-Compatible Storage]
-    AUTH --> DB[(PostgreSQL)]
-    REPORTS --> DB
-    INSIGHTS --> DB
-    BE --> DB
-```
-
-Frontend menangani map, lima pilihan mode, route layers, Insights, reduced offline summary, live position, dan client-triggered rerouting. Backend menjadi sumber kebenaran untuk authentication, validation, ownership, provider orchestration, ranking, explanation/evidence completeness, PM2.5 departure windows, weather/heat/UV, Places candidates, report trust, persistence, dan modeled impact.
-
 ### Database Schema
 
 ![AERoute Entity Relationship Diagram](https://raw.githubusercontent.com/AERoutee/AERoute-FE/main/assets/ERD.png)
-
-```mermaid
-erDiagram
-    MsUser ||--o{ TrSession : has
-    MsUser ||--o{ MsAccount : owns
-    MsUser ||--o{ TrRouteComparison : creates
-    TrRouteComparison ||--o{ TrRouteResult : contains
-    TrRouteResult ||--o{ TrRoutePlace : associates
-    MsUser ||--o{ TrRoadReport : submits
-    TrRoadReport ||--o{ TrRoadReportImage : contains
-    TrRoadReport ||--o{ TrRoadReportVerification : receives
-    MsUser ||--o{ TrRoadReportVerification : gives
-    MsUser ||--o{ MsSavedCommute : saves
-    MsUser ||--o{ TrTripImpact : records
-    TrRouteResult ||--o| TrTripImpact : supports
-```
-
-Perubahan schema saat ini:
-
-- Enum `TravelMode` mencakup `TRANSIT`; enum baru `RoadReportVerdict`, `AccessibilityMode`, `TransitPreference`, dan `RoutePlaceKind` mendukung verification, approximation mode, transit priority, serta klasifikasi `REST_STOP`/`TRANSIT_STOP`.
-- Tabel baru `TrRoadReportVerification`, `MsSavedCommute`, `TrTripImpact`, dan `TrRoutePlace` menyimpan verdict per pengguna, kompatibilitas saved commute, modeled trip impact, serta asosiasi Place ID per route result/ordinal. UI pembuatan dan pengelolaan Saved Commute telah dihapus, tetapi backend tetap kompatibel.
-- `TrRoadReport.resolvedAt` menyimpan owner resolution.
-- `TrRouteComparison` menyimpan label dan koordinat origin/destination, mode, preference, source, serta calculation version.
-- `TrRouteResult` menyimpan encoded route geometry serta insight fields `fewerConfirmedReportSignals`, `activeDistanceMeters`, dan `activeDurationSeconds` bersama duration, distance, PM2.5, exposure, dan data quality.
-- Migration terkait: `20260901000100_add_report_trust_and_insights`, `20260901000200_harden_route_insights`, dan `20260902000100_add_route_place_associations`.
 
 ### Folder Structure
 
