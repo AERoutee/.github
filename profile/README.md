@@ -124,7 +124,7 @@ Screenshot kompetisi belum tersedia. Placeholder ini akan diganti ketika aset sc
 
 ## Link Video Demo: https://www.youtube.com/watch?v=qeQefV2TFRI
 
-[![Watch the demo](https://img.youtube.com/vi/qeQefV2TFRI/maxresdefault.jpg)](https://www.youtube.com/watch?v=qeQefV2TFRI)
+[![Watch the demo](assets/thumbnail.png)](https://www.youtube.com/watch?v=qeQefV2TFRI)
 
 ---
 
