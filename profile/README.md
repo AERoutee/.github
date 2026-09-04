@@ -115,39 +115,68 @@
 
 #### Frontend
 
-```text
-Framework      : React 19 + Vite 8 + TypeScript
-UI             : Tailwind CSS 4
-Routing        : React Router
-Server State   : TanStack Query + Axios
-Authentication : Better Auth React Client
-Maps & Places  : Google Maps JavaScript API + Places
-PWA            : Web App Manifest + Service Worker + reduced offline summary
-Testing        : Jest + React Testing Library
-```
+![Tech Stack Frontend AERoute](assets/frontend.png)
 
 #### Backend
 
-```text
-Runtime        : Node.js + TypeScript ESM
-Framework      : Express 5
-Database / ORM : PostgreSQL + Prisma 7
-Authentication : Better Auth
-Validation     : Zod
-Google APIs    : Routes, Air Quality, Weather, Places
-Media          : Multer + Sharp + private S3-compatible storage
-Documentation  : OpenAPI 3.1 + Swagger UI
-```
+![Tech Stack Backend AERoute](assets/backend.png)
 
 #### DevOps & Tools
 
-```text
-Deployment     : Railway
-Website        : aeroute.my.id
-API            : api.aeroute.my.id
-CI/CD          : Railway GitHub Integration
-Quality Gates  : tests, coverage, lint, typecheck, build, Prisma validation/migrations
-Monitoring     : LogRocket frontend; redacted Railway/backend logs
+![Tech Stack DevOps & Tools AERoute](assets/devops.png)
+
+### Alasan Pemilihan Teknologi
+
+| Teknologi                                 | Alasan Pemilihan                                                                                                                                                                                    |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **React 19 + Vite 8 + TypeScript**        | Digunakan untuk membangun frontend AERoute yang cepat, berbasis komponen, dan memiliki struktur data yang konsisten untuk pengelolaan rute, koordinat, state navigasi, serta komunikasi dengan API. |
+| **Tailwind CSS 4**                        | Mempermudah pembuatan antarmuka yang responsif dan konsisten untuk penggunaan desktop maupun mobile.                                                                                                |
+| **React Router + TanStack Query + Axios** | Mengelola navigasi client-side, server state, caching, mutation, serta komunikasi HTTP antara frontend dan backend secara terstruktur.                                                              |
+| **Google Maps JavaScript API**            | Menampilkan peta, marker, polyline rute, Places, popup lokasi, serta mendukung visualisasi dan navigasi pengguna.                                                                                   |
+| **Node.js + Express 5 + TypeScript**      | Menyediakan backend REST API yang fleksibel untuk menangani autentikasi, perbandingan rute, laporan, profil, insight, dan integrasi dengan berbagai layanan eksternal.                              |
+| **PostgreSQL + Prisma 7**                 | Digunakan untuk menyimpan dan mengelola data relasional AERoute dengan dukungan schema, migration, transaction, relation, dan type-safe database client.                                            |
+| **Better Auth**                           | Menangani autentikasi pengguna, session, login email/password, Google OAuth, account linking, dan verifikasi akun.                                                                                  |
+| **Google Routes API**                     | Menyediakan alternatif rute, durasi, jarak, geometry, informasi transit, serta instruksi navigasi.                                                                                                  |
+| **Google Air Quality API**                | Menyediakan data PM2.5 saat ini dan forecast untuk membantu membandingkan kondisi kualitas udara pada alternatif rute.                                                                              |
+| **Google Weather API**                    | Menyediakan informasi cuaca berdasarkan lokasi dan estimasi waktu kedatangan pengguna, seperti hujan, angin, jarak pandang, panas, dan UV.                                                          |
+| **Google Places API**                     | Digunakan untuk mencari dan menampilkan kandidat tempat istirahat serta informasi fasilitas dan aksesibilitas yang tersedia.                                                                        |
+| **AWS SDK S3 + Multer + Sharp**           | Menangani upload, pemrosesan, optimasi, dan penyimpanan gambar profil maupun laporan pada private S3-compatible object storage.                                                                     |
+| **Zod**                                   | Memvalidasi data pada frontend maupun input API backend agar data yang diproses sesuai dengan struktur yang diharapkan.                                                                             |
+| **Jest + React Testing Library + SWC**    | Digunakan untuk menjalankan pengujian frontend dan backend, termasuk unit test, integration test, serta pengujian perilaku antarmuka pengguna.                                                      |
+| **OpenAPI 3.1 + Swagger UI**              | Mendokumentasikan endpoint API, struktur request dan response, serta kontrak error backend.                                                                                                         |
+
+### Dependencies Utama
+
+```json
+{
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1117.0",
+    "@better-auth/prisma-adapter": "^1.7.1",
+    "@googlemaps/js-api-loader": "^2.1.1",
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
+    "@tanstack/react-query": "^5.102.2",
+    "axios": "^1.19.0",
+    "better-auth": "^1.7.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "logrocket": "^12.3.0",
+    "lucide-react": "^1.33.0",
+    "motion": "^13.1.1",
+    "multer": "^2.2.0",
+    "nodemailer": "^9.0.5",
+    "pg": "^8.23.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router": "^8.3.0",
+    "serve": "^14.2.6",
+    "sharp": "^0.35.3",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.4.3"
+  }
+}
 ```
 
 ### Provider & Asset Attribution
@@ -428,9 +457,17 @@ Tidak ada klaim perintah E2E karena package frontend maupun backend tidak menyed
 
 ### Hasil Terverifikasi
 
+## Unit Testing Frontend
+
+![Unit Test FE](assets/unittest1.png)
+
+## Unit Testing backend
+
+![Unit Test BE](assets/unittest2.png)
+
 | Repository   | Suites | Tests | Statements | Branches | Functions |  Lines | Status                                       |
 | ------------ | -----: | ----: | ---------: | -------: | --------: | -----: | -------------------------------------------- |
-| **Frontend** |     33 |   210 |     93.75% |   83.36% |    91.42% | 97.74% | tests, coverage, lint, typecheck, build pass |
+| **Frontend** |     33 |   210 |     93.61% |   85.02% |    91.01% | 97.68% | tests, coverage, lint, typecheck, build pass |
 | **Backend**  |     20 |   344 |     95.47% |   87.27% |    95.48% | 98.17% | tests, coverage, lint, typecheck, build pass |
 
 `prisma validate` dan migration deploy pass. Coverage thresholds:
